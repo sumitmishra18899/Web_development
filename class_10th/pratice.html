@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Media Website</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1{
+            text-align: center;
+            color: #333;
+        }
+
+        h2{
+            margin-top: 40px;
+            color: #444;
+        }
+
+        .video-container,
+        .audio-container{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .card{
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        iframe{
+            border-radius: 10px;
+        }
+
+        audio{
+            width: 300px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Entertainment Media Website</h1>
+
+    <!-- Videos Section -->
+    <h2>Technology Videos</h2>
+
+    <div class="video-container">
+
+        <div class="card">
+            <h3>HTML Tutorial</h3>
+
+            <iframe 
+                width="300" 
+                height="200"
+                src="https://www.youtube.com/embed/HcOc7P5BMi4"
+                title="HTML Tutorial"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="card">
+            <h3>CSS Tutorial</h3>
+
+            <iframe 
+                width="300" 
+                height="200"
+                src="https://www.youtube.com/embed/ESnrn1kAD4E"
+                title="CSS Tutorial"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </div>
+
+
+    <!-- Music Videos -->
+    <h2>Music Videos</h2>
+
+    <div class="video-container">
+
+        <div class="card">
+            <h3>Music Video 1</h3>
+
+            <iframe 
+                width="300" 
+                height="200"
+                src="https://www.youtube.com/embed/kJQP7kiw5Fk"
+                title="Music Video"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="card">
+            <h3>Music Video 2</h3>
+
+            <iframe 
+                width="300" 
+                height="200"
+                src="https://www.youtube.com/embed/3JZ_D3ELwOQ"
+                title="Music Video"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </div>
+
+
+    <!-- Audio Section -->
+    <h2>Audio Categories</h2>
+
+    <div class="audio-container">
+
+        <div class="card">
+            <h3>Nature Sound</h3>
+
+            <audio controls>
+                <source src="nature.mp3" type="audio/mp3">
+                Your browser does not support audio.
+            </audio>
+        </div>
+
+        <div class="card">
+            <h3>Motivational Audio</h3>
+
+            <audio controls>
+                <source src="motivation.mp3" type="audio/mp3">
+                Your browser does not support audio.
+            </audio>
+        </div>
+
+    </div>
+
+</body>
+</html>
